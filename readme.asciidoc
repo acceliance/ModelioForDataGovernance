@@ -1,0 +1,7 @@
+link:https://www.acceliance.fr/offres/gouvernance-de-votre-plateforme-data[image:readme/logo-acc-amp-gauche-2400.png[]]
+
+== Modelio For Data Governance fourni par Acceliance
+
+
+
+Nous avons le plaisir de mettre à votre disposition un environnement de Gouvernance de la Plateforme Data basée sur la Modélisation d'Entreprise
