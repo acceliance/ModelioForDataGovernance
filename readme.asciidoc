@@ -15,7 +15,7 @@ link:https://github.com/ModelioOpenSource/Modelio/releases/tag/v5.4.1[*Modelio 5
 == Modelio Installation
 Launch the setup program, please note the it **does not require administrator priviledges** on the local station
 
-image:README/install modelio 1.PNG[Launching the Installation program]
+image:readme/install modelio 1.PNG[Launching the Installation program]
 
 Leave the destination folder as-is, it is located in the current personal folder
 
