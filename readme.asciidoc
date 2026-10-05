@@ -1,0 +1,162 @@
+= 🏛️ Modelio For Data Governance by Acceliance
+Acceliance
+:icons: font
+:experimental:
+:imagesdir: readme
+:toc: macro
+:toclevels: 3
+:sectanchors:
+
+link:https://www.acceliance.fr/en/offers/governance-for-your-data-platform/[image:logo-acc-amp-gauche-2400.png[Acceliance,role=text-center]]
+
+image:https://img.shields.io/badge/Modelio-5.x-blue[Modelio,link=https://github.com/ModelioOpenSource/Modelio/releases/tag/v5.4.1]
+image:https://img.shields.io/badge/licence-free%20(volume%20limited)-green[Free, volume limited]
+image:https://img.shields.io/badge/vendor-Acceliance-orange[Acceliance,link=https://www.acceliance.fr/]
+
+We are pleased to provide you with a Data Platform Governance environment based on Enterprise Modeling
+
+First install and then discover the features
+
+toc::[]
+
+== 📥 Installation steps
+
+=== 1️⃣ The environment is based on Modelio, so download it at first
+
+link:https://github.com/ModelioOpenSource/Modelio/releases/tag/v5.4.1[*Modelio 5.4.1 Download*,window=_blank]
+
+=== 2️⃣ Modelio Installation
+
+Launch the setup program.
+
+[NOTE]
+====
+It **does not require administrator priviledges** on the local station.
+====
+
+image:install modelio 1.PNG[Launching the Installation program]
+
+Leave the destination folder as-is, it is located in the current personal folder
+
+image:install modelio 2.PNG[Selecting the destination folder]
+
+At the end of the installation Modelio will automatically launch (leave the checkbox as selected)
+
+image:install modelio 3.PNG[Ending the Installation process and launch Modelio]
+
+[TIP]
+====
+If you need to force Modelio language to English, please use command line with `-nl en` command line option.
+====
+
+image:install modelio 4.PNG[Forcing use of English language]
+
+=== 3️⃣ Acceliance extension modules Installation
+
+link:https://github.com/acceliance/ModelioForDataGovernance/tree/main/modules[The modules actually are stored in the modules folder of this project,window=_blank]
+
+[IMPORTANT]
+====
+The modules should be downloaded on the local station before going further.
+====
+
+Then, the Modelio catalog must be enriched with the Acceliance modules, please use the following steps:
+
+image:install modelio 5.png[Open catalog]
+
+image:install modelio 6.PNG[The catalog with initial modules]
+
+Now use the btn:[Add a module to the catalog...] button and **select all the modules (*.jmdac) in one operation**
+
+image:install modelio 7.PNG[Select all the modules]
+
+Now the catalog is augmented with the Acceliance modules, it is time to start our first Data Modeling projet
+
+image:install modelio 8.PNG[The catalog is updated]
+
+== 🚀 Starting the first Data Modeling project
+
+=== 📁 Create empty project
+
+First **create an empty** folder that will host the new Data Modeling Project, then **select the workspace**
+
+image:project modelio 1.PNG[Select the workspace]
+
+Next **create project**
+
+image:project modelio 2.PNG[Create new project]
+
+Type your **project name** and validate creation
+
+image:project modelio 3.PNG[Project name]
+
+=== 🧩 Deploy Acceliance modules into Modelio
+
+Now you will **deploy the Acceliance modules** in the project (to bring Governance capabilities into Modelio)
+
+image:project modelio 4.PNG[Choose modules option]
+
+image:project modelio 5.PNG[Choose add option]
+
+You should be able to select the 4 modules from Acceliance:
+
+[cols="1,3",options="header"]
+|===
+| Module | Purpose
+
+| 🛠️ *ModelioUtils*
+| Services to accelerate scripting against Modelio
+
+| 📊 *ExcelUtils*
+| Services to create/reload excel files into Modelio
+
+| 🗺️ *CartographyManager*
+| Services for Datamesh/Data Products/Sprints, Model Documentation & Translation
+
+| 🎨 *DiagramColorizer*
+| Services for automatic domains colorization
+|===
+
+image:project modelio 6.PNG[Select the modules for deployment]
+
+You should be able to see the selected modules present into the Modelio project
+
+image:project modelio 7.PNG[Modules in project]
+
+=== ⚙️ Initialize the project with Acceliance extensions
+
+First **remove the node** under "My new project" using kbd:[DEL] key
+
+Then use the **Initialize Project** command using context menu on the project node
+
+image:project modelio 8.PNG[Initialize project]
+
+Now the project **structure** is ready to be used
+
+[NOTE]
+====
+The hierarchy will be used to generate Java code for SpringAPI or SpringData/SQL.
+====
+
+image:project modelio 9.PNG[Project structure]
+
+Now rename **your company** name in the node holding "acceliance" value
+
+image:project modelio 10.PNG[Company name]
+
+Now deploy the **usage cartography** to drive your Datamesh/Data Products/Sprints right inside the Enterprise Model
+
+image:project modelio 11.PNG[Create Usage Cartography]
+
+The stereotype for Usage Cartography is created
+
+[WARNING]
+====
+The usage names are dumb (Usecase1, Usecase2) so you will want to rename them.
+====
+
+image:project modelio 12.PNG[Usage Cartography]
+
+== 🏗️ Start building your Enterprise Data Model
+
+The project is ready to be used, please check as we will release sample projects on https://github.com/Acceliance[Acceliance Github]
